@@ -20,6 +20,7 @@ def sleep(x):
     time.sleep(x)
 
 
+
 def create_array(array, size_y, size_x):
     """
     Vytvoří 2d pole

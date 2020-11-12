@@ -52,6 +52,7 @@ def get_position(array):
 def set_tempo(array, coords):
     if coords == (0, 0) or coords == (0, len(array[0])-1) or coords == (len(array)-1, 0) or coords == (len(array)-1, len(array[0])-1):
         tempo[0], tempo[1] = -tempo[0], -tempo[1]
+        sleep(2)
         return 'corner'
     elif coords[0] == len(array) - 1 or coords[0] == 0:
         tempo[0], tempo[1] = -tempo[0], tempo[1]
@@ -91,5 +92,5 @@ while True:
     new_x = coords[1] + tempo[1]
     set_position(array, new_y, new_x)
 
-    sleep(0.125)
+    sleep(0)
 
